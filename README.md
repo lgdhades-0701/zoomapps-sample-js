@@ -2,7 +2,16 @@
 
 This Zoom App Sample uses Node.js + Express to build a simple Hello World Zoom App.
 
-## Prerequisites
+## Getting an access token
+There are two steps to get an access token:
+1. **Request user authorization.** When you create your app, you [set scopes](https://marketplace.zoom.us/docs/guides/auth/oauth/oauth-scopes) for the level of access that your app needs from the user. Zoom presents information about these scopes and access requests to the user. The user will **Authorize** or **Decline** these access permissions for your app.
+2. **Request an access token.** If the user authorizes permissions for your app to use the scopes you chose, your app can request an access token. To retain this access level, your app can request refresh tokens.
+
+## Step 1: Request user authorization
+https://marketplace.zoom.us/docs/guides/auth/oauth/#step-1-request-user-authorization
+## Step 2: Request access token
+https://marketplace.zoom.us/docs/guides/auth/oauth/#step-2-request-access-token
+<br><br><br><br><br><br><br><br><br><br><br>
 
 1. [Node JS](https://nodejs.org/en/)
 2. [Ngrok](https://ngrok.com/docs/getting-started)
